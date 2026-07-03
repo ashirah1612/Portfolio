@@ -71,11 +71,11 @@ function App() {
 
   const certifications = [
     "Introduction to Graphic Design (NPTEL)",
-    "Elements of AI-Minna",
-    "Hands-on Python",
-    "Industry Ready Full Stack Development (MERN)",
-    "Introduction to User Experience Design",
-    "MongoDB Basics",
+    "Elements of AI-Minnalearn (University of Helsinki)",
+    "Hands-on Python (Reccsar Pvt.Ltd)",
+    "Industry Ready Full Stack Development-MERN (Reccsar Pvt. Ltd)",
+    "Introduction to User Experience Design (Georgia Institute of Technology)",
+    "MongoDB Basics (MongoDB Inc)",
   ];
 
   const learning = [
@@ -139,7 +139,14 @@ function App() {
             </h1>
             <div className="hero-role">
               <span className="role-word">Aspiring </span>
-              <TypeCycle words={["AI/ML Engineer", "Full Stack Developer", "Software Engineer", "AI Researcher"]} />
+              <TypeCycle
+                words={[
+                  "AI/ML Engineer",
+                  "AI Software Engineer",
+                  "Full Stack AI Developer",
+                  "Machine Learning Engineer"
+                ]}
+              />           
             </div>
             <p className="hero-desc">
               I enjoy building intelligent software that combines Artificial Intelligence, Machine Learning, and modern web technologies to solve real-world problems. I'm continuously learning, building, and exploring innovative AI solutions.
@@ -353,25 +360,7 @@ function App() {
       </section>
 
       {/* CADENCE HEATMAP */}
-      <section className="section">
-        <div className="container">
-          <div className="eyebrow reveal"><span className="chip-dot" /> Build cadence</div>
-          <h2 className="section-title reveal">Consistency matters</h2>
-          <div className="glass-card cadence reveal">
-            <div className="cadence-sub">Last 26 weeks · placeholder</div>
-            <div className="heatmap">
-              {Array.from({ length: 26 }).map((_, col) => (
-                <div key={col} className="heat-col">
-                  {Array.from({ length: 7 }).map((_, row) => (
-                    <div key={row} className={`heat-cell heat-${cells[col * 7 + row]}`} />
-                  ))}
-                </div>
-              ))}
-            </div>
-            <div className="heat-legend"><span>Less</span><span className="heat-cell heat-0" /><span className="heat-cell heat-1" /><span className="heat-cell heat-2" /><span className="heat-cell heat-3" /><span className="heat-cell heat-4" /><span>More</span></div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* CONTACT */}
       <section id="contact" className="section">
